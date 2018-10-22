@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeScreen"
+    android:gravity="center|top">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="86dp"
+        android:text="@string/home_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="75sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <Button
+        android:id="@+id/button_schedule"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="285dp"
+        android:layout_height="80dp"
+        android:onClick="openSchdule"
+        android:text="@string/schedule"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_availability"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="285dp"
+        android:layout_height="80dp"
+        android:onClick="openAvailability"
+        android:text="@string/availablity"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_schedule" />
+
+    <Button
+        android:id="@+id/button_request"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="285dp"
+        android:layout_height="80dp"
+        android:onClick="openRequest"
+        android:text="@string/requests"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="285dp"
+        android:layout_height="80dp"
+        android:text="@string/contacts"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_exit"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="285dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="#db7a7a"
+        android:onClick="logOut"
+        android:text="@string/log_out"
+        android:textColor="#bc0f0f"
+        android:textSize="24sp" />
+
+</LinearLayout>

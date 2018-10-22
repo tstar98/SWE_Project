@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Prototype</string>
+
+    <!-- Strings for home screen -->
+    <string name="home_title">shiftr</string>
+    <string name="availablity">Edit Availability</string>
+    <string name="schedule">See Schedule</string>
+    <string name="requests">Request Time Off</string>
+    <string name="log_out">Log Out</string>
+    <string name="contacts">Contacts</string>
+
+    <!-- Strings for Request off -->
+    <string name="select_date">Select date to request off</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="error_invalid_email">The username is invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+</resources>
