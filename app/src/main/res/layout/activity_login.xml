@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/prompt_username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
 
     <Space
         android:layout_width="match_parent"
@@ -44,17 +45,26 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/prompt_password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textAlignment="center" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="124dp" />
+        android:layout_height="75dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSignIn"
         android:layout_width="match_parent"
         android:layout_height="66dp"
-        android:onClick="login"
+        android:onClick="logIn"
         android:text="@string/action_sign_in"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:onClick="gotoRegister"
+        android:text="Need an account?"
         android:textSize="24sp" />
 </LinearLayout>

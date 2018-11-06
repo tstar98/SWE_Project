@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class HomeScreen extends AppCompatActivity {
 
     @Override
@@ -30,7 +32,14 @@ public class HomeScreen extends AppCompatActivity {
     }
 
     public void logOut(View view){
+        FirebaseAuth.getInstance().signOut();
+
         Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void addUser(View view){
+        Intent intent = new Intent(this, AddUser.class);
         startActivity(intent);
     }
 }

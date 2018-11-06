@@ -50,7 +50,6 @@ public class Request extends AppCompatActivity {
             toNext = false;
 
             Toast toast = Toast.makeText(this, "Enter a valid date", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0, 150);
             toast.show();
         }
 
@@ -62,7 +61,6 @@ public class Request extends AppCompatActivity {
 
         if(toNext){
             Toast toast = Toast.makeText(this, "Request Sent", Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
 
             //Goes back to homescreen

@@ -29,49 +29,54 @@
     <Button
         android:id="@+id/button_schedule"
         style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="285dp"
+        android:layout_width="320dp"
         android:layout_height="80dp"
         android:onClick="openSchdule"
         android:text="@string/schedule"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/button_availability"
         style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="285dp"
+        android:layout_width="320dp"
         android:layout_height="80dp"
         android:onClick="openAvailability"
         android:text="@string/availablity"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_schedule" />
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/button_request"
         style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="285dp"
+        android:layout_width="320dp"
         android:layout_height="80dp"
         android:onClick="openRequest"
         android:text="@string/requests"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/button2"
-        style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="285dp"
-        android:layout_height="80dp"
-        android:text="@string/contacts"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="@string/contacts"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="22sp" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_exit"
         style="@android:style/Widget.Material.Light.Button.Toggle"
-        android:layout_width="285dp"
+        android:layout_width="320dp"
         android:layout_height="80dp"
         android:layout_marginBottom="49dp"
         android:backgroundTint="#db7a7a"
