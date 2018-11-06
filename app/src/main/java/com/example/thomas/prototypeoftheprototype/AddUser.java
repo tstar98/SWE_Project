@@ -17,16 +17,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class AddUser extends AppCompatActivity {
     private static final String TAG = AddUser.class.getSimpleName();
     private FirebaseAuth mAuth;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_user);
 
+        final EditText editTextname = (EditText)findViewById(R.id.editTextName);
         final EditText editTextemail = (EditText)findViewById(R.id.editTextEmail);
         final EditText editTextpass = (EditText)findViewById(R.id.editTextPass);
         final EditText editTextrepass = (EditText)findViewById(R.id.editTextRePass);
@@ -37,43 +40,80 @@ public class AddUser extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                name = editTextname.getText().toString();
                 String email = editTextemail.getText().toString();
                 String pass = editTextpass.getText().toString();
                 String repass = editTextrepass.getText().toString();
                 boolean canRegisster = true;
 
+                //check name
+                //if empty cannot login
+                if(name.isEmpty()){
+                    canRegisster = false;
+                    editTextname.setError("Field cannot be empty");
+                }
+                //check if it is a valid name
+                else{
+                    for(char c : name.toCharArray()){
+                        if(!Character.isAlphabetic(c) && !Character.isSpaceChar(c) && c != '-'){
+                            canRegisster = false;
+                            editTextname.setError("Enter valid name");
+                            break;
+                        }
+                    }
+                }
+
+                //check email
+                //if empty cannot login
                 if (email.isEmpty()){
                     canRegisster = false;
                     editTextemail.setError("Field cannot be empty");
                 }
+                //if not email cannot login
                 else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     canRegisster = false;
                     editTextemail.setError("Invalid email");
                 }
 
+                //check password
+                //if empty cannot login
                 if(pass.isEmpty()){
                     canRegisster = false;
                     editTextpass.setError("Field cannot be empty");
                 }
+                //if passwords don't match
                 else if (!pass.equals(repass)){
                     canRegisster = false;
                     editTextpass.setError("Fields must match");
                     editTextrepass.setError("Fields must match");
                 }
 
+                //if no errors attempt to register
                 if (canRegisster){
                     mAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(AddUser.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                // Sign in success, update UI with the signed-in user's information
-                                Toast.makeText(AddUser.this, "Registered user", Toast.LENGTH_LONG).show();
-                            } else {
+                                // registered user
+                                // Add name to profile
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                if (user != null) {
+                                    UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
+                                            .setDisplayName(name).build();
+
+                                    user.updateProfile(profile);
+                                    Toast.makeText(getApplicationContext(), "User registered", Toast.LENGTH_SHORT).show();
+                                }
+                                startActivity(new Intent(AddUser.this, HomeScreen.class));
+                            }
+                            else {
                                 // If sign in fails, display a message to the user.
+                                //User already exists
                                 if(task.getException() instanceof FirebaseAuthUserCollisionException){
                                     Toast.makeText(getApplicationContext(), "User already exists", Toast.LENGTH_SHORT).show();
-
-                                }else{
+                                }
+                                //displays message of why user can't register
+                                else{
                                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             }
@@ -82,7 +122,6 @@ public class AddUser extends AppCompatActivity {
                 }
             }
         });
-
     }
 }
 
