@@ -13,6 +13,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -55,10 +56,15 @@ public class LoginActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     //successful login
                     if(task.isSuccessful()){
-                        Intent intent = new Intent(LoginActivity.this, HomeScreen.class);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent);
+                        FirebaseUser mUser = mAuth.getCurrentUser();
+                        if (mUser.isEmailVerified()){
 
+                        }
+                        else {
+                            Intent intent = new Intent(LoginActivity.this, HomeScreen.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(intent);
+                        }
                     }
                     //unsuccessful login, display error
                     else{
