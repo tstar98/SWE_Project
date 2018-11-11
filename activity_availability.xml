@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <!-- Monday -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="385dp"
+                android:layout_height="85dp"
+                android:text="@string/monday"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="30sp" />
+
+                <CheckBox
+                    android:id="@+id/mon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift1" />
+                <CheckBox
+                    android:id="@+id/mon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift2" />
+                <CheckBox
+                    android:id="@+id/mon3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift3" />
+                <CheckBox
+                    android:id="@+id/mon4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift4" />
+        </LinearLayout>
+
+        <!-- Tuesday -->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="385dp"
+                    android:layout_height="85dp"
+                    android:text="@string/tuesday"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="30sp" />
+                <CheckBox
+                    android:id="@+id/tues1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift1" />
+                <CheckBox
+                    android:id="@+id/tues2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift2" />
+                <CheckBox
+                    android:id="@+id/tues3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift3" />
+                <CheckBox
+                    android:id="@+id/tues4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shift4" />
+        </LinearLayout>
+
+        <!-- Wednesday -->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView
+                 android:layout_width="385dp"
+                 android:layout_height="85dp"
+                 android:text="@string/wednesday"
+                 android:textAlignment="center"
+                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                 android:textSize="30sp" />
+             <CheckBox
+                 android:id="@+id/wed1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/shift1" />
+             <CheckBox
+                 android:id="@+id/wed2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/shift2" />
+             <CheckBox
+                 android:id="@+id/wed3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/shift3" />
+             <CheckBox
+                 android:id="@+id/wed4"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/shift4" />
+         </LinearLayout>
+
+        <!-- Thursday -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="85dp"
+            android:text="@string/thursday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="30sp"/>
+        <CheckBox
+            android:id="@+id/thurs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1" />
+        <CheckBox
+            android:id="@+id/thurs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2" />
+        <CheckBox
+            android:id="@+id/thurs3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3" />
+        <CheckBox
+            android:id="@+id/thurs4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4" />
+    </LinearLayout>
+        <!-- Friday -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="85dp"
+            android:text="@string/friday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="30sp"/>
+        <CheckBox
+            android:id="@+id/fri1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1" />
+        <CheckBox
+            android:id="@+id/fri2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2" />
+        <CheckBox
+            android:id="@+id/fri3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3" />
+        <CheckBox
+            android:id="@+id/fri4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4" />
+    </LinearLayout>
+        <!-- Saturday -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="85dp"
+            android:text="@string/saturday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="30sp"/>
+        <CheckBox
+            android:id="@+id/sat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1" />
+        <CheckBox
+            android:id="@+id/sat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2" />
+        <CheckBox
+            android:id="@+id/sat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3" />
+        <CheckBox
+            android:id="@+id/sat4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4" />
+    </LinearLayout>
+        <!-- Sunday -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="385dp"
+            android:layout_height="85dp"
+            android:text="@string/sunday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textSize="30sp"/>
+        <CheckBox
+            android:id="@+id/sun1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1" />
+        <CheckBox
+            android:id="@+id/sun2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2" />
+        <CheckBox
+            android:id="@+id/sun3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3" />
+        <CheckBox
+            android:id="@+id/sun4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4" />
+        <Button
+            android:id="@+id/submitAvailability"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Availability"/>
+    </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
