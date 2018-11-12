@@ -98,12 +98,15 @@ public class AddUser extends AppCompatActivity {
                                 // Add name to profile
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 if (user != null) {
+                                    //change profile request
                                     UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
                                             .setDisplayName(name).build();
 
+                                    //successful update
                                     user.updateProfile(profile);
                                     Toast.makeText(getApplicationContext(), "User registered", Toast.LENGTH_SHORT).show();
                                 }
+                                //go to homescreen
                                 startActivity(new Intent(AddUser.this, HomeScreen.class));
                             }
                             else {

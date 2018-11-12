@@ -21,4 +21,18 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
 
+    <!-- Strings for schedule -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="shift1">Shift 1: 6am - 10am</string>
+    <string name="shift2">Shift 2: 10am - 2pm</string>
+    <string name="shift3">Shift 3: 2pm - 6pm</string>
+    <string name="shift4">Shift 4: 6pm - 10pm</string>
+
+
 </resources>
