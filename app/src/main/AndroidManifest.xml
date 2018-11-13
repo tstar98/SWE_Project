@@ -30,7 +30,8 @@
         <activity android:name=".Schedule" />
         <activity android:name=".Availability" />
         <activity android:name=".Request" />
-        <activity android:name=".AddUser"></activity>
+        <activity android:name=".AddUser" />
+        <activity android:name=".ManagerHomeScreen" />
     </application>
 
 </manifest>

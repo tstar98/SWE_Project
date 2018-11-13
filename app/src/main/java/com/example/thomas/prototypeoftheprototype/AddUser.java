@@ -23,6 +23,7 @@ public class AddUser extends AppCompatActivity {
     private static final String TAG = AddUser.class.getSimpleName();
     private FirebaseAuth mAuth;
     private String name;
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +97,7 @@ public class AddUser extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 // registered user
                                 // Add name to profile
-                                FirebaseUser user = mAuth.getCurrentUser();
+                                user = mAuth.getCurrentUser();
                                 if (user != null) {
                                     //change profile request
                                     UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
@@ -104,7 +105,8 @@ public class AddUser extends AppCompatActivity {
 
                                     //successful update
                                     user.updateProfile(profile);
-                                    Toast.makeText(getApplicationContext(), "User registered", Toast.LENGTH_SHORT).show();
+
+                                    //Toast.makeText(getApplicationContext(), "User registered", Toast.LENGTH_SHORT).show();
                                 }
                                 //go to homescreen
                                 startActivity(new Intent(AddUser.this, HomeScreen.class));

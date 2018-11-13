@@ -8,7 +8,11 @@
     <string name="requests">Request Time Off</string>
     <string name="log_out">Log Out</string>
     <string name="contacts">Contacts</string>
-    <string name="register_user">Add User</string>
+    <string name="register_user">Sign up</string>
+
+    <!-- Strings for manager home screen -->
+    <string name="edit_schedule">Edit Schedule</string>
+    <string name="approve_requests">Approve Requests</string>
 
     <!-- Strings for Request off -->
     <string name="select_date">Select date to request off</string>
