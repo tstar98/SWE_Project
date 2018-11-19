@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Schedule">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Monday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/monday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="?attr/colorError" />
+
+        <TextView
+            android:id="@+id/mon1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/monShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/monShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/monShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/monShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mon3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/monShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/monShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mon4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/monShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/monShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/Tuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="?android:attr/colorMultiSelectHighlight" />
+        <TextView
+            android:id="@+id/tues1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tuesShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tuesShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tues2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tuesShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tuesShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tues3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tuesShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tuesShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tues4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tuesShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tuesShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/Wednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="?android:attr/colorPressedHighlight" />
+        <TextView
+            android:id="@+id/wed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/wedShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/wedShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/wed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/wedShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/wedShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/wed3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/wedShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/wedShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/wed4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/wedShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/wedShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/Thursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/holo_green_dark" />
+        <TextView
+            android:id="@+id/thurs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/thursShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/thursShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/thurs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/thursShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/thursShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/thurs3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/thursShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/thursShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/thurs4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/thursShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/thursShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/Friday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/holo_blue_dark" />
+        <TextView
+            android:id="@+id/fri1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/friShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/friShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fri2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/friShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/friShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fri3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/friShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/friShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fri4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/friShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/friShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/Saturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="?attr/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/sat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/satShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/satShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/satShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/satShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sat3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/satShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/satShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sat4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/satShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/satShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/Sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/holo_purple" />
+        <TextView
+            android:id="@+id/sun1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/sunShift1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/sunShift1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sun2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/sunShift2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/sunShift2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sun3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/sunShift3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/sunShift3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/sun4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shift4"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/sunShift4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/sunShift4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
