@@ -11,18 +11,29 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 
 public class Request extends AppCompatActivity {
     Calendar dateOff;
-    String reason;
+    private String reason, date;
+    private FirebaseUser user;
+    private DatabaseReference mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request);
+
+        //database instances
+        mData = FirebaseDatabase.getInstance().getReference();
+        user = FirebaseAuth.getInstance().getCurrentUser();
 
         dateOff = new GregorianCalendar(1970, 0, 31);
         CalendarView cv = (CalendarView)findViewById(R.id.calendar);
@@ -32,7 +43,8 @@ public class Request extends AppCompatActivity {
         cv.setOnDateChangeListener((new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                tv.setText(month + " / " + dayOfMonth + " / " + year);
+                date = (month + 1) + " " + dayOfMonth + " " + year;
+                tv.setText(date);
                 dateOff.set(year, month, dayOfMonth);
             }
         }));
@@ -60,6 +72,10 @@ public class Request extends AppCompatActivity {
         }
 
         if(toNext){
+            //push onto database
+            mData.child("Pending Requests").child(date).child(user.getUid()).child("Name").setValue(user.getDisplayName());
+            mData.child("Pending Requests").child(date).child(user.getUid()).child("Reason").setValue(reason);
+
             Toast toast = Toast.makeText(this, "Request Sent", Toast.LENGTH_LONG);
             toast.show();
 
@@ -68,9 +84,4 @@ public class Request extends AppCompatActivity {
             startActivity(intent);
         }
     }
-
-
-
-
-
 }

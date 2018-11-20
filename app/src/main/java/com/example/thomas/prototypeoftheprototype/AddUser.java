@@ -18,12 +18,15 @@ import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AddUser extends AppCompatActivity {
     private static final String TAG = AddUser.class.getSimpleName();
     private FirebaseAuth mAuth;
     private String name;
     private FirebaseUser user;
+    private DatabaseReference mData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class AddUser extends AppCompatActivity {
         final Button btn = (Button)findViewById(R.id.buttonRegister);
 
         mAuth = FirebaseAuth.getInstance();
+        mData = FirebaseDatabase.getInstance().getReference();
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
