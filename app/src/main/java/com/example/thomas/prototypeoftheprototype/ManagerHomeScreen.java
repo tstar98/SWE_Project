@@ -15,8 +15,13 @@ public class ManagerHomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_manager_home_screen);
     }
 
-    public void openSchdule(View view){
+    public void openSchedule(View view){
         Intent intent = new Intent(this, Schedule.class);
+        startActivity(intent);
+    }
+
+    public void editSchedule(View view){
+        Intent intent = new Intent(this, EditSchedule.class);
         startActivity(intent);
     }
 
@@ -25,5 +30,9 @@ public class ManagerHomeScreen extends AppCompatActivity {
 
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
+    }
+
+    public void requests(View view){
+        Intent intent = new Intent(this, ManagerRequest.class);
     }
 }

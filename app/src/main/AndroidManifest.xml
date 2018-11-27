@@ -32,6 +32,10 @@
         <activity android:name=".Request" />
         <activity android:name=".AddUser" />
         <activity android:name=".ManagerHomeScreen" />
+        <activity android:name=".MakeSchedule"/>
+        <activity android:name=".EditSchedule">
+
+        </activity>
     </application>
 
 </manifest>

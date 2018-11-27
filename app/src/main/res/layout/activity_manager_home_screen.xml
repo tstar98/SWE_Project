@@ -31,7 +31,7 @@
         style="@android:style/Widget.Material.Light.Button.Toggle"
         android:layout_width="320dp"
         android:layout_height="80dp"
-        android:onClick="openSchdule"
+        android:onClick="openSchedule"
         android:text="@string/schedule"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="22sp" />
@@ -41,6 +41,7 @@
         style="@android:style/Widget.Material.Light.Button.Toggle"
         android:layout_width="320dp"
         android:layout_height="80dp"
+        android:onClick="editSchedule"
         android:text="@string/edit_schedule"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="22sp" />
@@ -50,6 +51,7 @@
         style="@android:style/Widget.Material.Light.Button.Toggle"
         android:layout_width="320dp"
         android:layout_height="80dp"
+        android:onClick="requests"
         android:text="@string/approve_requests"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="22sp" />
