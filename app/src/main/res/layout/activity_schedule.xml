@@ -22,6 +22,14 @@
             android:textColor="?attr/colorError" />
 
         <TextView
+            android:id="@+id/date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+
+        <TextView
             android:id="@+id/mon1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,16 +41,15 @@
             android:id="@+id/monShift1a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
             android:textSize="18sp" />
+
         <TextView
             android:id="@+id/monShift1b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/mon2"
@@ -56,17 +63,15 @@
             android:id="@+id/monShift2a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/monShift2b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/mon3"
@@ -80,17 +85,15 @@
             android:id="@+id/monShift3a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/monShift3b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/mon4"
@@ -99,20 +102,20 @@
             android:text="@string/shift4"
             android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
+
         <TextView
             android:id="@+id/monShift4a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/monShift4b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/Tuesday"
@@ -123,26 +126,33 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="?android:attr/colorMultiSelectHighlight" />
         <TextView
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+        <TextView
             android:id="@+id/tues1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/shift1"
             android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
+
         <TextView
             android:id="@+id/tuesShift1a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tuesShift1b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tues2"
@@ -151,20 +161,20 @@
             android:text="@string/shift2"
             android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
+
         <TextView
             android:id="@+id/tuesShift2a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tuesShift2b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tues3"
@@ -173,20 +183,20 @@
             android:text="@string/shift3"
             android:textColor="@android:color/background_dark"
             android:textSize="24sp" />
+
         <TextView
             android:id="@+id/tuesShift3a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/tuesShift3b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:textAlignment="center"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tues4"
@@ -218,6 +228,13 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="?android:attr/colorPressedHighlight" />
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
         <TextView
             android:id="@+id/wed1"
             android:layout_width="match_parent"
@@ -315,6 +332,13 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@android:color/holo_green_dark" />
         <TextView
+            android:id="@+id/date4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+        <TextView
             android:id="@+id/thurs1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -410,6 +434,13 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@android:color/holo_blue_dark" />
+        <TextView
+            android:id="@+id/date5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
         <TextView
             android:id="@+id/fri1"
             android:layout_width="match_parent"
@@ -507,6 +538,13 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="?attr/colorPrimaryDark" />
         <TextView
+            android:id="@+id/date6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+        <TextView
             android:id="@+id/sat1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -602,6 +640,13 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textColor="@android:color/holo_purple" />
+        <TextView
+            android:id="@+id/date7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
         <TextView
             android:id="@+id/sun1"
             android:layout_width="match_parent"
